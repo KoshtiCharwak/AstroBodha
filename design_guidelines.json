@@ -1,0 +1,114 @@
+{
+  "project_name": "ZODIAC - Personalized Daily Astrology App",
+  "app_type": "mobile_app",
+  "tech_stack": {
+    "framework": "Expo React Native (JavaScript .js)",
+    "backend": "FastAPI",
+    "database": "MongoDB",
+    "style_system": "Tailwind CSS / NativeWind or StyleSheet for React Native .js components"
+  },
+  "visual_identity": {
+    "theme": "Dark Cosmic Luxury & Celestial Mystery",
+    "archetype": "LUXURY & CELESTIAL MYSTERY (Archetype 5)",
+    "mood": "Enchanting, personal, spiritual, premium, trustworthy, editorial newspaper-style prediction feel transformed into a sleek digital experience.",
+    "brand_assets": {
+      "logo_transparent": "https://customer-assets-7cd3h4nn.emergentagent.net/job_1caf6eb4-cbfe-42af-8ec2-5ecaa7c018c5/artifacts/rnc7j91c_logo_png.png",
+      "logo_white_bg": "https://customer-assets-7cd3h4nn.emergentagent.net/job_1caf6eb4-cbfe-42af-8ec2-5ecaa7c018c5/artifacts/03154nh7_logo_white_bg.jpg",
+      "home_reference_ui": "https://customer-assets-7cd3h4nn.emergentagent.net/job_1caf6eb4-cbfe-42af-8ec2-5ecaa7c018c5/artifacts/fl6bhmmh_HomeScreenUI.png",
+      "splash_reference_ui": "https://customer-assets-7cd3h4nn.emergentagent.net/job_1caf6eb4-cbfe-42af-8ec2-5ecaa7c018c5/artifacts/b6i3iu4n_SplashScreenImg.jpg",
+      "how_it_works_reference_ui": "https://customer-assets-7cd3h4nn.emergentagent.net/job_1caf6eb4-cbfe-42af-8ec2-5ecaa7c018c5/artifacts/9senopap_HowItWorks.jpg"
+    }
+  },
+  "typography": {
+    "file_type_note": "This project uses .js files (not .tsx). Ensure all React Native components are styled for .js files.",
+    "headline_font": "Georgia / Serif display font (or Playfair / Cinemax Serif equivalent in Expo) for elegant editorial headers like 'ZODIAC', 'How Zodiac Works', and 'It's a good day to align your stars'. Never use Inter for main headings.",
+    "body_font": "System / Sans-Serif (SF Pro / Roboto) for high readability in body copy, labels, inputs, and form fields.",
+    "scale": {
+      "h1_hero": "32px to 36px, font-weight 700 / bold, tracking-tight, Serif",
+      "h2_section": "22px to 26px, font-weight 600, Serif",
+      "h3_card_title": "18px to 20px, font-weight 600",
+      "body_text": "14px to 16px, font-weight 400, leading-relaxed",
+      "caption_label": "12px to 13px, font-weight 500, uppercase, letter-spacing 1.2px"
+    }
+  },
+  "colors": {
+    "background_primary": "#080816",
+    "background_secondary": "#110E29",
+    "background_card": "#181438",
+    "background_card_border": "#2E285C",
+    "accent_purple_glow": "#9333EA",
+    "accent_violet_light": "#C084FC",
+    "gold_primary": "#F59E0B",
+    "gold_glow": "#FBBF24",
+    "gold_dark": "#B45309",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#9CA3AF",
+    "text_muted": "#6B7280",
+    "prediction_categories": {
+      "love": {
+        "color": "#EC4899",
+        "bg_glow": "#831843",
+        "icon": "heart",
+        "label": "Love"
+      },
+      "career": {
+        "color": "#14B8A6",
+        "bg_glow": "#115E59",
+        "icon": "briefcase",
+        "label": "Career"
+      },
+      "finance": {
+        "color": "#EAB308",
+        "bg_glow": "#713F12",
+        "icon": "dollar-sign",
+        "label": "Finance"
+      },
+      "wellbeing": {
+        "color": "#A855F7",
+        "bg_glow": "#581C87",
+        "icon": "sun",
+        "label": "Wellbeing"
+      }
+    }
+  },
+  "image_urls": {
+    "starry_nebula_bg": "https://images.pexels.com/photos/3279307/pexels-photo-3279307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "cosmic_galaxy": "https://images.pexels.com/photos/2694037/pexels-photo-2694037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "layout_and_screens": {
+    "1_splash_screen": "Shows hexagon Z logo with letter Z + ZODIAC wordmark over deep cosmic background with subtle star twinkle and a 3-second smooth scale/zoom animation before transitioning to Auth.",
+    "2_auth_screen": "Mobile number input + OTP verification tabbed with Signup (Name, Mobile, DOB, Place of birth, optional Time of birth, optional Email). Smooth keyboard-avoiding container.",
+    "3_birth_details_form": "Dedicated screen or step for collecting exact birth details (Date, Time, Location) with celestial picker UI to compute exact Zodiac sign & natal chart positions.",
+    "4_how_it_works_onboarding": "4-step story-style carousel or vertical tap-card flow based on HowItWorks.jpg reference. Tapping screen or waiting 3 seconds advances. Includes skip & step progress indicators.",
+    "5_home_screen": {
+      "header": "Left profile icon (opens My Account), Center 'ZODIAC' serif wordmark, Right notification bell with unread badge dot.",
+      "hero_section": "Greeting 'Hello, [Name]' in purple light font, bold headline 'It's a good day to align your stars', user zodiac sign name with glyph icon + 'Current Position'. Right side features glowing orbit/planet illustration with small floating zodiac glyphs and star sparkles.",
+      "daily_predictions_card": "'My Daily Zodiac Predictions' card with current date string (e.g. 'Oct 24, 2026'). Contains 4 rows: Love (pink heart), Career (teal briefcase), Finance (gold dollar), Wellbeing (purple meditation/sun). Each with 1-line personalized prediction & chevron to expand.",
+      "daily_remedy_challenge_card": "Dark card with cosmic mountain/journey illustration, displaying today's positive remedy or spiritual challenge.",
+      "habit_streak_section": "🔥 Daily Streak - 7 Days indicator. Rewarding visual design encouraging daily check-ins.",
+      "subscription_lock_state": "When trial ends, predictions & remedy cards exhibit a blurred glass overlay with 'Start Your Subscription' CTA leading to ₹99/month paywall.",
+      "bottom_navigation": "Fixed 3-item navigation bar: Left 'Ask Astrologer' (opens coming soon view), Center elevated circular gold/amber floating button with crown icon ('Unlock Premium' / Subscription trigger), Right 'Shop' (opens shop/merch placeholder)."
+    },
+    "6_prediction_detail_screen": "Expanded detailed astrological breakdown for Love, Career, Finance, or Wellbeing with planetary position explanations, dosage of guidance, and shareable quote card.",
+    "7_paywall_subscription_screen": "₹99/month subscription offering 2 days free trial. Shows key benefits list: Full daily Love/Career/Finance/Wellbeing predictions, daily remedies & challenges, custom planetary transit updates.",
+    "8_notifications_panel": "List of daily horoscope alerts, planetary shift updates, and streak reminders.",
+    "9_my_account_and_edit_profile": "User profile with avatar, zodiac sign summary, birth chart info, subscription status, notification toggles, and edit birth details action.",
+    "10_ask_astrologer_coming_soon": "Elegant placeholder previewing direct astrologer chat with option to join notification waitlist.",
+    "11_shop_coming_soon": "Curated celestial products, gemstone recommendations, and astro-merchandise store placeholder."
+  },
+  "general_ui_ux_design_guidelines": [
+    "All interactive buttons, inputs, links, tabs, cards, and key information blocks MUST include a data-testid attribute formatted in kebab-case (e.g., data-testid='daily-prediction-love-card', data-testid='unlock-premium-button').",
+    "Header and navigation overlays MUST NOT use complete transparent background. Use solid deep cosmic background or glassmorphism with dark semi-transparent tint backdrop-blur.",
+    "Strictly follow React Native Expo .js (JavaScript) formatting standards for component exports and styling.",
+    "Maintain high APCA / WCAG text contrast on dark backgrounds: pure white text (#FFFFFF) for main headlines, soft light grey (#9CA3AF) for body copy.",
+    "Micro-interactions: Add active scale press effects (e.g. activeOpacity={0.8} or Animated.spring) on cards and buttons.",
+    "Ensure input forms handle React Native KeyboardAvoidingView safely for seamless birth date and mobile entry."
+  ],
+  "instructions_to_main_agent": [
+    "Read /app/design_guidelines.json completely before writing implementation code.",
+    "Build clean React Native components inside the Expo Router directory structure with .js files.",
+    "Implement the complete user journey: Splash (3s animation) -> Auth / Birth Details -> How It Works (4 steps) -> Home Screen -> Prediction Details / Paywall / Notifications / Profile / Ask Astrologer / Shop.",
+    "Strictly adhere to the Home Screen reference image visual layout: hero greeting, planet orbit illustration, 4 sub-prediction rows (Love, Career, Finance, Wellbeing), remedies card, streak tracker, elevated gold bottom button.",
+    "Ensure every interactive element has a data-testid attribute for automated test reliability."
+  ]
+}
